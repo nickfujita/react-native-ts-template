@@ -6,24 +6,31 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "web": "webpack-dev-server --port 3000 --config web/webpack.config.js --inline --hot --colors --quiet",
     "prebuild": "rm -rf build",
-    "build": "tsc --watch"
+    "build": "tsc"
   },
   "dependencies": {
     "react": "15.4.2",
-    "react-native": "0.40.0"
+    "react-native": "0.40.0",
+    "react-native-web": "0.0.69"
   },
   "devDependencies": {
     "@types/react": "^15.0.4",
     "@types/react-native": "^0.37.11",
     "babel-jest": "18.0.0",
+    "babel-loader": "^6.2.10",
     "babel-preset-react-native": "1.9.1",
+    "file-loader": "^0.10.0",
     "jest": "18.1.0",
     "react-test-renderer": "15.4.2",
     "tslint": "^4.4.2",
     "tslint-react": "^2.3.0",
     "typescript": "^2.1.5",
-    "typings": "^2.1.0"
+    "typings": "^2.1.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   },
   "jest": {
     "preset": "react-native"

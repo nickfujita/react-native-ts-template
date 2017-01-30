@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'white',
   } as React.ViewStyle,
 
   welcome: {
@@ -31,9 +31,9 @@ export default class App extends Component<any, any> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Hello Moto...
+          Hello World!
         </Text>
-        <Text style={styles.welcome}>
+        <Text style={styles.instructions}>
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>

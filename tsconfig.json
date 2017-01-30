@@ -15,9 +15,11 @@
   "exclude": [
     "index.android.js",
     "index.ios.js",
+    "index.web.js",
     "build",
     "node_modules",
-    "__tests__"
+    "__tests__",
+    "web"
   ],
   "compileOnSave": false
 }
